@@ -75,9 +75,9 @@ const Banner = () => {
   };
 
   return (
-    <section className="w-full bg-white py-12 md:py-16">
+    <section className="w-full bg-white py-8 md:py-10">
       {/* Container wrapper for uniform alignment across all components */}
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-12 px-6 md:flex-row md:px-12">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-6 md:flex-row">
         {/* Left Content Section */}
         <div className="w-full text-left md:w-1/2">
           <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
