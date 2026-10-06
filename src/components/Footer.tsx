@@ -2,11 +2,11 @@
 
 const Footer = () => {
   return (
-    <footer className="mt-20 border-t border-gray-100 bg-white pt-12 pb-8">
+    <footer className="mt-20 border-t border-gray-100 bg-white pt-12 pb-8 py-8 md:py-12">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
-        {/* Top Section */}
+      
         <div className="grid grid-cols-1 gap-10 md:grid-cols-5">
-          {/* Brand Column */}
+      
           <div className="md:col-span-2">
             <div className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-tr from-purple-600 to-pink-500 font-bold text-white text-xs">
@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Product Links */}
+          
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wider text-gray-900">
               Product
@@ -57,7 +57,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company Links */}
+        
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wider text-gray-900">
               Company
@@ -81,7 +81,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Legal Links */}
+       
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wider text-gray-900">
               Legal
@@ -101,7 +101,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
+      
         <div className="mt-12 flex flex-col items-center justify-between border-t border-gray-100 pt-6 text-xs text-gray-400 sm:flex-row">
           <p>© 2026 Dev Stack. All rights reserved.</p>
           <div className="mt-2 flex gap-4 sm:mt-0">
