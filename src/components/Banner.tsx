@@ -76,50 +76,48 @@ const Banner = () => {
 
   return (
     <section className="w-full bg-white py-12 md:py-16">
-      {/* Wrapper container for exact horizontal alignment */}
-      <div className="mx-auto max-w-10xl px-6 md:px-12">
-        <div className="flex flex-col items-center justify-between gap-12 md:flex-row">
-          {/* Left Content Section */}
-          <div className="w-full md:w-1/2">
-            <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-              Build Your Ideal
-              <span className="mt-1 block bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-                Development Stack
-              </span>
-            </h1>
+      {/* Container wrapper for uniform alignment across all components */}
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-12 px-6 md:flex-row md:px-12">
+        {/* Left Content Section */}
+        <div className="w-full text-left md:w-1/2">
+          <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            Build Your Ideal
+            <span className="mt-1 block bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+              Development Stack
+            </span>
+          </h1>
 
-            <p className="mt-6 max-w-lg text-sm leading-relaxed text-slate-500 sm:text-base">
-              Explore frontend, backend, database, and tooling options,
-              compare them side by side, and put together the stack that
-              fits your next project.
-            </p>
+          <p className="mt-6 max-w-lg text-sm leading-relaxed text-slate-500 sm:text-base">
+            Explore frontend, backend, database, and tooling options,
+            compare them side by side, and put together the stack that
+            fits your next project.
+          </p>
 
-            {/* Action Buttons */}
-            <div className="mt-8 flex items-center gap-4">
-              <button
-                onClick={handleExplore}
-                className="rounded-xl bg-gradient-to-r from-orange-500 via-pink-500 to-rose-500 px-6 py-3 text-xs font-semibold text-white shadow-sm transition-all hover:opacity-95 active:scale-95 sm:text-sm"
-              >
-                Explore Technologies
-              </button>
+          {/* Action Buttons */}
+          <div className="mt-8 flex items-center gap-4">
+            <button
+              onClick={handleExplore}
+              className="rounded-xl bg-gradient-to-r from-orange-500 via-pink-500 to-rose-500 px-6 py-3 text-xs font-semibold text-white shadow-sm transition-all hover:opacity-95 active:scale-95 sm:text-sm"
+            >
+              Explore Technologies
+            </button>
 
-              <button
-                onClick={handleLearnMore}
-                className="rounded-xl border border-gray-200 bg-white px-8 py-3 text-xs font-medium text-slate-600 shadow-sm transition-all hover:bg-gray-50 active:scale-95 sm:text-sm"
-              >
-                Learn More
-              </button>
-            </div>
+            <button
+              onClick={handleLearnMore}
+              className="rounded-xl border border-gray-200 bg-white px-8 py-3 text-xs font-medium text-slate-600 shadow-sm transition-all hover:bg-gray-50 active:scale-95 sm:text-sm"
+            >
+              Learn More
+            </button>
           </div>
+        </div>
 
-          {/* Right Illustration Section */}
-          <div className="flex w-full justify-center md:w-1/2 md:justify-end">
-            <img
-              src={bannerImage}
-              alt="Development technology illustration"
-              className="w-full max-w-[420px] object-contain"
-            />
-          </div>
+        {/* Right Illustration Section */}
+        <div className="flex w-full justify-center md:w-1/2 md:justify-end">
+          <img
+            src={bannerImage}
+            alt="Development technology illustration"
+            className="w-full max-w-[420px] object-contain"
+          />
         </div>
       </div>
     </section>
