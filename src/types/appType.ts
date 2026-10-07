@@ -9,4 +9,5 @@
   badge: string;
   image: string;
   description: string;
+  badgeStyle?: string;
 }

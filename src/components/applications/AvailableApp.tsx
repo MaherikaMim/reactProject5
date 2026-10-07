@@ -7,10 +7,10 @@ import type { Iapp } from "../../types/appType";
 const AvailableApp = ({ applications }: { applications: Iapp[] }) => {
   const [selectedStack, setSelectedStack] = useState<Iapp[]>([]);
 
-  // Category restriction bad diye sob tech add korar function
+
   const handleAddToStack = (app: Iapp) => {
     setSelectedStack((prevStack) => {
-      // Shudhu same item er duplicate erikaite (Already added kina check)
+     
       const isAlreadyAdded = prevStack.some(
         (item) => (item.id || item.name) === (app.id || app.name)
       );
@@ -32,7 +32,7 @@ const AvailableApp = ({ applications }: { applications: Iapp[] }) => {
 
   return (
     <main className="flex flex-col gap-8 lg:flex-row lg:items-start">
-      {/* Tech Cards Grid */}
+   
       <div className="mt-6 grid flex-1 grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {applications.map((application) => (
           <div
@@ -50,7 +50,7 @@ const AvailableApp = ({ applications }: { applications: Iapp[] }) => {
                 {application.badge && (
                   <span
                     className={`rounded-full px-2.5 py-1 text-[10px] font-medium ${
-                      application.badgeStyle || "bg-blue-50 text-blue-600"
+                     application .badgeStyle || "bg-blue-50 text-blue-600"
                     }`}
                   >
                     {application.badge}
